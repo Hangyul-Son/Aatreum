@@ -1,0 +1,24 @@
+.top-navigation {
+  .ant-image {
+    display: inline;
+  }
+
+  .logo {
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+
+  .navigation-menu {
+    .search-bar {
+      transform: translate(0, 25%);
+      margin-left: auto;
+    }
+
+    .navigation-button {
+      border-color: #00b2b2;
+      color: #00b2b2;
+    }
+  }
+}
