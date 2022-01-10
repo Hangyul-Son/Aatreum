@@ -4,14 +4,15 @@ import { Layout } from "antd";
 import TopNavigation from "../components/top-navigation";
 
 type Properties = {
+  pageName: string;
   children: ReactNode;
 };
 
 const { Header, Content, Footer } = Layout;
 
-function Template({ children }: Properties) {
+function Template({ pageName, children }: Properties) {
   return (
-    <Layout>
+    <Layout className={pageName}>
       <Header style={{ background: "#ffffff" }}>
         <TopNavigation />
       </Header>

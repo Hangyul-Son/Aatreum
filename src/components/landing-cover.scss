@@ -1,0 +1,35 @@
+.landing-cover-container {
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+
+  .ant-image {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .cover-text {
+    position: absolute;
+    top: 82.5%;
+    left: 22.5%;
+    transform: translate(-50%, -50%);
+
+    .cover-title {
+      color: white;
+      margin-bottom: 1%;
+    }
+
+    .cover-subtitle {
+      color: white;
+      margin-bottom: 1%;
+    }
+  }
+
+  .cover-mask {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
