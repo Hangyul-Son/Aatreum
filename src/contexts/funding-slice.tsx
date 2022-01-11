@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import data from "../data/funding-projects.json";
 
 type Funding = {
   id: number;
@@ -13,10 +14,10 @@ type SlideState = {
 };
 
 const initialState: SlideState = {
-  fundingProjects: [],
+  fundingProjects: [...data],
 };
 
-export const profileSlice = createSlice({
+export const fundingSlice = createSlice({
   name: "fundings",
   initialState,
   reducers: {
@@ -26,6 +27,6 @@ export const profileSlice = createSlice({
   },
 });
 
-export const { addFunding } = profileSlice.actions;
+export const { addFunding } = fundingSlice.actions;
 
-export default profileSlice.reducer;
+export default fundingSlice.reducer;
