@@ -1,10 +1,25 @@
 .landing-recommend {
   .recommend-section {
     color: #656969;
-    margin-bottom: 1.5%;
+    margin-bottom: 2%;
   }
 
   .recommend-image {
     width: 100%;
+  }
+
+  .recommend-divider {
+    margin: 12px 0;
+    border-width: 2px;
+  }
+
+  .recommend-title {
+    font-size: 15px;
+    margin-bottom: 0.3em;
+  }
+
+  .recommend-count {
+    color: #037362;
+    margin-bottom: 0.3em;
   }
 }
