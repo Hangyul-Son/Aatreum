@@ -3,6 +3,7 @@ import { Col, Grid, Row } from "antd";
 
 import LandingFeatured from "./landing-featured";
 import LandingDivider from "./landing-divider";
+import LandingRecommend from "./landing-recommend";
 
 const { useBreakpoint } = Grid;
 
@@ -10,15 +11,17 @@ function LandingMain() {
   const screens = useBreakpoint();
 
   return (
-    <Row className="landing-main" align="middle">
-      <Col xs={24} sm={24} md={24} lg={16} xl={16}>
+    <Row align="middle" className="landing-main">
+      <Col xs={24} sm={24} md={24} lg={13} xl={13}>
         <LandingFeatured />
       </Col>
       <LandingDivider
         colProps={{ xs: 24, sm: 24, md: 24, lg: 1, xl: 1 }}
         dividerType={screens.lg ? "vertical" : "horizontal"}
       />
-      <Col xs={24} sm={24} md={24} lg={7} xl={7}></Col>
+      <Col xs={24} sm={24} md={24} lg={10} xl={10}>
+        <LandingRecommend />
+      </Col>
     </Row>
   );
 }
