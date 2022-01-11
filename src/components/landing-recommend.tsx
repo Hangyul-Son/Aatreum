@@ -17,10 +17,10 @@ function LandingRecommend() {
       </Typography.Title>
 
       {fundingProjects.map((project, index) => (
-        <>
+        <div key={project.id}>
           {index !== 0 ? <Divider className="recommend-divider" /> : undefined}
 
-          <Row key={project.id} gutter={15} className="recommend-container">
+          <Row gutter={15} className="recommend-container">
             <Col span={8}>
               <Image
                 src={project.imageSrc}
@@ -45,7 +45,7 @@ function LandingRecommend() {
               </div>
             </Col>
           </Row>
-        </>
+        </div>
       ))}
     </div>
   );

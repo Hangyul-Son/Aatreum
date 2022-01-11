@@ -24,7 +24,9 @@ function TopNavigation() {
           <Search placeholder="Who are you looking for?" allowClear />
         </Menu.Item>
 
-        <Menu.Item key={menuItems.length + 1}>Log In</Menu.Item>
+        <Menu.Item key={menuItems.length + 1} onFocus={() => console.log("hi")}>
+          Log In
+        </Menu.Item>
         <Menu.Item key={menuItems.length + 2}>Sign Up</Menu.Item>
         <Menu.Item key={menuItems.length + 3}>
           <Button className="navigation-button">Be a Creator</Button>
