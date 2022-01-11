@@ -22,12 +22,12 @@ function LandingFeatured() {
         Support Gunwoo Baek's 1st Album: "Summer"
       </Typography.Title>
 
-      <Typography.Paragraph className="featured-description">
+      <Typography.Paragraph strong className="featured-description">
         A photograph album consisting of collection of visual "memories" from
         2021.
       </Typography.Paragraph>
 
-      <Typography.Text type="secondary" strong>
+      <Typography.Text type="secondary" strong className="featured-author">
         By Gunwoo Baek
       </Typography.Text>
     </div>
