@@ -8,7 +8,7 @@ type Properties = {
   children: ReactNode;
 };
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 function Template({ pageName, children }: Properties) {
   return (
@@ -17,7 +17,7 @@ function Template({ pageName, children }: Properties) {
         <TopNavigation />
       </Header>
       <Content>{children}</Content>
-      <Footer>Footer</Footer>
+      {/* <Footer>TODO</Footer> */}
     </Layout>
   );
 }
