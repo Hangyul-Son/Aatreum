@@ -2,15 +2,20 @@
   height: 91vh;
   overflow: hidden;
   position: relative;
+  width: 100%;
 
-  .ant-image {
+  .ant-image,
+  .cover-mask {
     position: fixed;
-    top: 20%;
-    transform: translateY(-20%);
-    z-index: 0;
+    top: 0;
     margin-top: 64px;
+    width: 100%;
+    padding: 0 2%;
   }
 
+  .cover-mask {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
 
   .bio-cover-text {
     position: absolute;
@@ -18,9 +23,9 @@
     top: 70%;
     left: 50%;
     font-family: "Times New Roman";
-    
+
     .bio-cover-title {
-      position:relative;
+      position: relative;
       left: -50%;
       color: white;
       font-size: 1.5cm;
@@ -41,13 +46,5 @@
     .bio-cover-button:focus {
       border-color: white;
     }
-  }
-
-  .cover-mask {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
   }
 }
