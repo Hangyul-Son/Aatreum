@@ -51,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@types/babel__core": "^7.1.18",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^40.0.0",

@@ -15,11 +15,9 @@ function LandingRecommend() {
       <Typography.Title level={5} className="recommend-section">
         RECOMMENDED FOR YOU
       </Typography.Title>
-
       {fundingProjects.map((project, index) => (
         <div key={project.id}>
           {index !== 0 ? <Divider className="recommend-divider" /> : undefined}
-
           <Row gutter={15} className="recommend-container">
             <Col span={8}>
               <Image

@@ -1,0 +1,10 @@
+.funding-photo-container{
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+	
+  .ant-image {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
