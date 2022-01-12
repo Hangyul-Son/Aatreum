@@ -1,25 +1,24 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useCallback, useLayoutEffect, useState } from "react";
 import { Button, Image, Typography } from "antd";
 
 import "./bio-cover.scss";
 
 function BioCover() {
   const [scrollTop, setScrollTop] = useState(0);
-
-  useLayoutEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScrollTop(document.documentElement.scrollTop);
-    });
+  const getScrollTop = useCallback(() => {
+    setScrollTop(document.documentElement.scrollTop);
   }, []);
 
-  console.log(scrollTop);
+  useLayoutEffect(() => {
+    window.addEventListener("scroll", getScrollTop);
+    return () => window.removeEventListener("scroll", getScrollTop);
+  }, [getScrollTop]);
 
   return (
     <div
       className="bio-cover-container"
       style={{
         opacity: 1 - scrollTop / 500,
-        transform: "translate(0," + -scrollTop / 10 + "px)",
       }}
     >
       <Image

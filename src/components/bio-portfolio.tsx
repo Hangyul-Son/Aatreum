@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row, Image, Card } from "antd";
-
 import "./bio-portfolio.scss";
 
 const carSource = ["car1.png", "car2.png", "car3.png", "car4.png"];
