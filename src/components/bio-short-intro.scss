@@ -1,0 +1,30 @@
+.short-intro-container {
+  position: relative;
+  background: white;
+  padding: 75px 0;
+  height: 25vh;
+  width: 100vw;
+  
+  .container-group {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+
+    .col-1 {
+      float: left;
+      width: 50%;
+      text-align: center;
+      font-family: "Times New Roman";
+      
+      .col-1-text {
+        margin: 0;
+      }
+    }
+
+    .col-2 {
+      float: right;
+      padding-left: 0.5cm;
+      width: 50%;
+    }
+  }
+}

@@ -13,7 +13,7 @@ const { Header, Content } = Layout;
 function Template({ pageName, children }: Properties) {
   return (
     <Layout className={pageName}>
-      <Header style={{ background: "#ffffff" }}>
+      <Header style={{ background: "#ffffff" }} className="header">
         <TopNavigation />
       </Header>
       <Content>{children}</Content>
