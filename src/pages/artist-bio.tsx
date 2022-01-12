@@ -1,7 +1,7 @@
 import React from "react";
-import BioCover from "../components/bio-cover";
-import BioPortfolio from "../components/bio-portfolio";
-import BioShortIntro from "../components/bio-short-intro";
+import BioCover from "../components/bio/bio-cover";
+import BioPortfolio from "../components/bio/bio-portfolio";
+import BioShortIntro from "../components/bio/bio-short-intro";
 
 import Template from "./template";
 import "../styles/artist-bio.scss";
