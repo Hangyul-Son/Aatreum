@@ -1,4 +1,7 @@
 .pf-container {
-  background: white;
-  z-index: 1;
+  background: green;
+
+  .pf-row {
+    margin: 0 12.5%;
+  }
 }
