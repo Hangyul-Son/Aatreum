@@ -1,0 +1,49 @@
+.bio-cover-container {
+  height: 91vh;
+  overflow: hidden;
+  position: relative;
+
+  .ant-image {
+    top: 20%;
+    transform: translateY(-20%);
+  }
+
+  .bio-cover-text {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    font-family: "Times New Roman";
+    
+    .bio-cover-title {
+      position:relative;
+      left: -50%;
+      color: white;
+      font-size: 1.5cm;
+    }
+
+    .bio-cover-button {
+      position: relative;
+      left: -50%;
+      background-color: transparent;
+      color: white;
+    }
+
+    .bio-cover-button::after {
+      display: none;
+    }
+
+    .bio-cover-button:hover,
+    .bio-cover-button:focus {
+      border-color: white;
+    }
+  }
+
+  .cover-mask {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
