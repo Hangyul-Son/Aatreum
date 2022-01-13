@@ -33,9 +33,7 @@ function BioCover() {
         <Typography.Title level={1} className="bio-cover-title">
           May I photograph your car?
         </Typography.Title>
-        <Button size="large" className="bio-cover-button">
-          Read this Story
-        </Button>
+        <Button className="bio-cover-button">Read this Story</Button>
       </div>
     </div>
   );

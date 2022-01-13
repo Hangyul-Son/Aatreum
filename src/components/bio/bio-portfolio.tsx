@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Image, Card } from "antd";
+import { Col, Row, Image, Card, Typography } from "antd";
 import "./bio-portfolio.scss";
 
 const carSource = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
@@ -7,6 +7,8 @@ const carSource = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
 function BioPortfolio() {
   return (
     <div className="pf-container">
+      <Typography.Title level={4}>Portfolio</Typography.Title>
+
       <Row className="pf-row">
         {carSource.map((imageSource, index) => (
           <Col xs={24} sm={24} md={24} lg={12} xl={12} className="pf-col">
