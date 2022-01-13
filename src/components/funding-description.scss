@@ -1,0 +1,32 @@
+.funding-description-container {
+	margin: 0 5%;
+	.funding-title {
+		margin :auto;
+		width: 100%;
+		text-align: center;
+	}
+	.funding-deadline {
+		margin : 0 auto;
+		width: 100%;
+		text-align: left;
+		color: black;
+	}
+	.funding-reward-description {
+		margin : 20 auto;
+		width: 100%;
+		text-align: left;
+		color: black;
+	}
+	.funding-deadline-description {
+		margin : 0 auto;
+		width: 100%;
+		text-align: left;
+		color: gray;
+	}
+	.funding-progress {
+		margin : 0 auto;
+		width: 100%;
+		text-align: center;
+		color: #8c52ff;
+	}
+}

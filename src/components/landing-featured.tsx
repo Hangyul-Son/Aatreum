@@ -19,7 +19,7 @@ function LandingFeatured() {
       <div className="featured-image-border" />
 
       <Typography.Title level={3} className="featured-title">
-        Support Gunwoo Baek's 1st Album: "Summer"
+        Support Gunwoo Baek's 1st Photo Album: "Summer"
       </Typography.Title>
 
       <Typography.Paragraph strong className="featured-description">
