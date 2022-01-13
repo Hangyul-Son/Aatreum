@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Progress } from "antd";
+import { Typography, Progress, Button } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 import "./funding-description.scss";
 
@@ -39,9 +39,18 @@ function FundingDescription() {
         percent={60}
         strokeWidth={3.5}
         showInfo={false}
-        strokeColor="#8c52ff"
-        trailColor="#cdb7f6"
+        strokeColor="green"
+        trailColor="#74B72E"
       />
+      <Button
+        type="primary"
+        ghost={true}
+        loading={true}
+        className="funding-button"
+        block={true}
+      >
+        SUPPORT
+      </Button>
     </div>
   );
 }

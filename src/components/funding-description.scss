@@ -1,9 +1,11 @@
 .funding-description-container {
 	margin: 0 5%;
 	.funding-title {
-		margin :auto;
+		font-family: "Times New Roman";
+		margin: auto;
 		width: 100%;
 		text-align: center;
+		
 	}
 	.funding-deadline {
 		margin : 0 auto;
@@ -24,9 +26,21 @@
 		color: gray;
 	}
 	.funding-progress {
-		margin : 0 auto;
+		font-family: "Times New Roman", Times, serif;;
+		padding-top: 30px;
 		width: 100%;
 		text-align: center;
-		color: #8c52ff;
+		color: black;
+	}
+	.funding-button {
+		width: 100%;
+		text-align: center;
+		font-family: serif;
+		font-size: 30px;
+		color: green;
+		border-color: green;
+		border-radius: 30px;
+		border-width: 1px;
+		height: 50px;
 	}
 }
