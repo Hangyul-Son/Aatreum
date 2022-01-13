@@ -4,6 +4,16 @@
   padding-top: 5%;
 
   .pf-row {
-    margin: 0 12.5%;
+    margin: 0 20%;
+
+    .pf-col {
+      padding: 0% 3% 5% 3%;
+      align-self: stretch;
+    }
+  }
+
+  .ant-card-bordered, 
+  .ant-card-cover {
+    margin: 7px;
   }
 }
