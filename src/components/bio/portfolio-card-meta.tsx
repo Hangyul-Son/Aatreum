@@ -26,12 +26,20 @@ function PortfolioCardMeta({
         preview={false}
       />
       <PortfolioCardTypes author={author} type={type} />
-      <Typography.Title>{title}</Typography.Title>
-      <Typography.Text>
+      <br />
+      <div className="meta-title-container">
+        <Typography.Title level={3} className="meta-title">
+          {title}
+        </Typography.Title>
+      </div>
+      <br />
+      <Typography.Text className="meta-children">
         {children}
         <br />
-        {date}
       </Typography.Text>
+      <div className="meta-date">
+        <Typography.Text italic>{date}</Typography.Text>
+      </div>
     </div>
   );
 }

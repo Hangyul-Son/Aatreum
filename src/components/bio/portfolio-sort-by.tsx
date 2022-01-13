@@ -39,7 +39,7 @@ function PortfolioSortBy() {
         }
         className="bio-sort-dropdown"
       >
-        <Space size={70}>
+        <Space size={90}>
           <Typography.Text>Sort By</Typography.Text>
           <Typography.Text>+</Typography.Text>
         </Space>

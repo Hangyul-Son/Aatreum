@@ -6,10 +6,16 @@ import "./portfolio-sort-by.scss";
 
 import PortfolioCardMeta from "./portfolio-card-meta";
 import PortfolioSortBy from "./portfolio-sort-by";
+import { useSelector } from "react-redux";
+import { RootState } from "../../contexts/store";
 
-const carSource = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
+// const carSource = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
 
 function BioPortfolio() {
+  const previousProjects = useSelector(
+    (state: RootState) => state.funding.previousProjects
+  );
+
   return (
     <div className="pf-container">
       <Image
@@ -17,9 +23,8 @@ function BioPortfolio() {
         preview={false}
         className="pf-logo"
       />
-      <Typography.Title level={4} className="pf-title">
-        THE STORIES
-      </Typography.Title>
+      <br />
+      <Typography.Text className="pf-title">Previous Projects</Typography.Text>
 
       <Row className="pf-row">
         <PortfolioSortBy />
@@ -36,26 +41,34 @@ function BioPortfolio() {
           </Space>
         </Col>
 
-        {carSource.map((imageSource, index) => (
-          <Col xs={24} sm={24} md={24} lg={12} xl={12} className="pf-col">
+        {previousProjects.map((project, index) => (
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={12}
+            xl={12}
+            key={project.id}
+            className="pf-col"
+          >
             <Card
               hoverable
               cover={
                 <Image
+                  src={window.location.origin + project.imgSrc}
                   style={{ height: "70%" }}
                   preview={false}
-                  src={window.location.origin + "/assets/images/" + imageSource}
                 />
               }
+              style={{ height: "100%" }}
             >
               <PortfolioCardMeta
-                author="SHANTELL MARTIN"
-                type="ART"
-                title="Well, ARE YOU?"
-                date={new Date().toDateString()}
+                author={project.author}
+                type={project.category}
+                title={project.title}
+                date={project.date}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur volutpat enim ut tellus consectetur, in.
+                {project.description}
               </PortfolioCardMeta>
             </Card>
           </Col>
