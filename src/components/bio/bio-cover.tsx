@@ -18,7 +18,7 @@ function BioCover() {
     <div
       className="bio-cover-container"
       style={{
-        opacity: 1 - scrollTop / 770,
+        opacity: 1 - scrollTop / 820,
       }}
     >
       <Image
