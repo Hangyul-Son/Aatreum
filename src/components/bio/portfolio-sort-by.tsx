@@ -37,9 +37,10 @@ function PortfolioSortBy() {
             <Menu.Item danger>a danger item</Menu.Item>
           </Menu>
         }
+        className="bio-sort-dropdown"
       >
-        <Space>
-          <Typography.Text>Hover me</Typography.Text>
+        <Space size={70}>
+          <Typography.Text>Sort By</Typography.Text>
           <Typography.Text>+</Typography.Text>
         </Space>
       </Dropdown>

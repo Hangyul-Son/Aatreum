@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row, Image, Card, Typography, Space } from "antd";
+import { RightOutlined } from "@ant-design/icons";
 import "./bio-portfolio.scss";
+import "./portfolio-sort-by.scss";
 
 import PortfolioCardMeta from "./portfolio-card-meta";
 import PortfolioSortBy from "./portfolio-sort-by";
@@ -22,9 +24,15 @@ function BioPortfolio() {
       <Row className="pf-row">
         <PortfolioSortBy />
         <Col xs={24} sm={12} className="pf-link">
-          <Space>
-            <Typography.Text>SEE FILMS</Typography.Text>
-            <Typography.Text>SEE ALL STORIES</Typography.Text>
+          <Space size={"large"}>
+            <Typography.Text>
+              SEE FILMS
+              <RightOutlined />
+            </Typography.Text>
+            <Typography.Text>
+              SEE ALL STORIES
+              <RightOutlined />
+            </Typography.Text>
           </Space>
         </Col>
 

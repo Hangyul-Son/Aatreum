@@ -9,9 +9,9 @@ function BioShortIntro() {
   return (
     <Row align="middle" className="short-intro-container">
       <Col xs={24} sm={12} className="short-intro-title">
-        <Text>
+        <Typography.Title level={1}>
           I'm in <em>love</em> with cars
-        </Text>
+        </Typography.Title>
       </Col>
 
       <Col xs={24} sm={12} className="short-intro-paragraph">
