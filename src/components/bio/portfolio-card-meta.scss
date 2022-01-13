@@ -1,0 +1,12 @@
+.pf-card-meta-container {
+  position: relative;
+
+  .ant-image {
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    max-width: 100px;
+    right: 0;
+    height: 500px;
+  }
+}

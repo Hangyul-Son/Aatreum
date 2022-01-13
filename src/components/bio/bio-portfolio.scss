@@ -2,18 +2,30 @@
   position: relative;
   background-color: #f0f2f5;
   padding-top: 5%;
+  text-align: center;
+
+  .pf-logo {
+    width: 95px;
+  }
+
+  .pf-title {
+    margin-bottom: 4%;
+  }
 
   .pf-row {
     margin: 0 20%;
 
-    .pf-col {
-      padding: 0% 3% 5% 3%;
-      align-self: stretch;
+    .pf-sort {
+      text-align: left;
     }
-  }
 
-  .ant-card-bordered, 
-  .ant-card-cover {
-    margin: 7px;
+    .pf-link {
+      text-align: right;
+    }
+
+    .pf-col {
+      margin-top: 4%;
+      padding: 0% 3% 5% 3%;
+    }
   }
 }
