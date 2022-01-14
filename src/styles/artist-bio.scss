@@ -1,9 +1,13 @@
 .artist-bio {
   background-color: white;
 
-  .header {
+  header {
     z-index: 1;
     position: sticky;
     top: 0;
+  }
+
+  main {
+    overflow-y: hidden;
   }
 }
