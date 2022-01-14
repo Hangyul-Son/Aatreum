@@ -25,7 +25,11 @@ function FundingSidebio() {
             marginBottom: "20px",
           }}
         >
-          <Image src="../../assets/images/bgw.png" className="sidebio-image" />
+          <Image
+            src="../../assets/images/bgw.png"
+            preview={false}
+            className="sidebio-image"
+          />
           <Typography.Text className="sidebio-description-text">
             ABOUT GUNWOO BAEK <br />
             He is a photographer who is very devoted in mobile vehicles. An
