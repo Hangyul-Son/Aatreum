@@ -32,7 +32,7 @@ function PortfolioCardMeta({
         </Typography.Title>
       </div>
       <br />
-      <Typography.Text className="meta-children">
+      <Typography.Text strong className="meta-children">
         {children}
         <br />
       </Typography.Text>
