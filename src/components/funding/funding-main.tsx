@@ -17,24 +17,24 @@ function FundingMain() {
         <Col span={24}>
           <FundingTitle />
         </Col>
-        <div className="project-image-description">
-          <Row className="project-image-description-row">
-            <Col span={15}>
-              <FundingCover />
-            </Col>
-            <Col span={9}>
-              <FundingDescription />
-            </Col>
-          </Row>
-        </div>
+
+        <Col xs={24} sm={24} md={15} lg={15} xl={15}>
+          <FundingCover />
+        </Col>
+
+        <Col xs={24} sm={24} md={9} lg={9} xl={9}>
+          <FundingDescription />
+        </Col>
       </Row>
+
       <FundingPhase />
       <FundingNotice />
+
       <Row className="funding-main-lowerhalf">
-        <Col span={14}>
+        <Col xs={24} sm={24} md={16} lg={16} xl={16}>
           <FundingDescriptionSpecific />
         </Col>
-        <Col span={10}>
+        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
           <FundingSidebio />
         </Col>
       </Row>
