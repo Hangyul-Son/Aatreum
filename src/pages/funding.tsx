@@ -2,7 +2,7 @@ import React from "react";
 import Template from "./template";
 import "../styles/funding.scss";
 
-import FundingMain from "../components/funding-main";
+import FundingMain from "../components/funding/funding-main";
 
 function Funding() {
   return (

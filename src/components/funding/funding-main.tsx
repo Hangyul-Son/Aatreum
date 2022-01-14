@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "antd";
-import "./funding-main.scss";
+import "../funding/funding-main.scss";
 
 import FundingCover from "./funding-cover";
 import FundingTitle from "./funding-title";
@@ -8,6 +8,7 @@ import FundingDescription from "./funding-description";
 import FundingNotice from "./funding-notice";
 import FundingDescriptionSpecific from "./funding-description-specific";
 import FundingPhase from "./funding-phase";
+import FundingSidebio from "./funding-sidebio";
 
 function FundingMain() {
   return (
@@ -28,6 +29,9 @@ function FundingMain() {
       <Row className="funding-main-lowerhalf">
         <Col span={14}>
           <FundingDescriptionSpecific />
+        </Col>
+        <Col span={10}>
+          <FundingSidebio />
         </Col>
       </Row>
     </div>
