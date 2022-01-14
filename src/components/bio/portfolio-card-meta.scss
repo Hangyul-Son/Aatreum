@@ -5,10 +5,17 @@
   .ant-image {
     position: absolute;
     top: 0px;
-    width: 100px;
-    max-width: 100px;
     right: -4%;
-    height: 500px;
+
+    .pf-card-minted {
+      width: 150px;
+      margin-top: -15%;
+      margin-left: 20%;
+    }
+
+    .pf-card-progress {
+      width: 100px;
+    }
   }
 
   .meta-title-container {

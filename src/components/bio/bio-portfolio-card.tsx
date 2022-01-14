@@ -50,6 +50,7 @@ function BioPortfolioCard({ project }: Properties) {
           type={project.category}
           title={project.title}
           date={project.date}
+          minted={project.id % 2 === 1}
         >
           {project.description}
         </PortfolioCardMeta>

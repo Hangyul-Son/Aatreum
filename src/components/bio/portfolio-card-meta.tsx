@@ -8,6 +8,7 @@ type Properties = {
   author: string;
   type: string;
   title: string;
+  minted: boolean;
   date: string;
   children: ReactNode;
 };
@@ -17,12 +18,18 @@ function PortfolioCardMeta({
   type,
   title,
   date,
+  minted,
   children,
 }: Properties) {
   return (
     <div className="pf-card-meta-container">
       <Image
-        src={window.location.origin + "/assets/images/progress.jpg"}
+        src={
+          window.location.origin +
+          "/assets/images/" +
+          (minted ? "minted.png" : "progress.jpg")
+        }
+        className={minted ? "pf-card-minted" : "pf-card-progress"}
         preview={false}
       />
       <PortfolioCardTypes author={author} type={type} />
