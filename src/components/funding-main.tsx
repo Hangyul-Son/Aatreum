@@ -23,10 +23,11 @@ function FundingMain() {
         </Col>
       </Row>
       <FundingNotice />
-			<Row className="funding-main-lowerhalf">
-				<Col span={14}>
-					<FundingDescriptionSpecific />
-			</Row>
+      <Row className="funding-main-lowerhalf">
+        <Col span={14}>
+          <FundingDescriptionSpecific />
+        </Col>
+      </Row>
     </div>
   );
 }
