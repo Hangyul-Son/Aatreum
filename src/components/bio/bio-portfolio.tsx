@@ -1,15 +1,12 @@
 import React from "react";
-import { Col, Row, Image, Card, Typography, Space } from "antd";
-import { RightOutlined } from "@ant-design/icons";
+import { useSelector } from "react-redux";
+import { Col, Row, Image, Card, Typography } from "antd";
 import "./bio-portfolio.scss";
-import "./portfolio-sort-by.scss";
 
+import { RootState } from "../../contexts/store";
 import PortfolioCardMeta from "./portfolio-card-meta";
 import PortfolioSortBy from "./portfolio-sort-by";
-import { useSelector } from "react-redux";
-import { RootState } from "../../contexts/store";
-
-// const carSource = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
+import BioPortfolioMore from "./bio-portfolio-more";
 
 function BioPortfolio() {
   const previousProjects = useSelector(
@@ -24,22 +21,11 @@ function BioPortfolio() {
         className="pf-logo"
       />
       <br />
-      <Typography.Text className="pf-title">Previous Projects</Typography.Text>
+      <Typography.Text className="pf-title">PREVIOUS PROJECTS</Typography.Text>
 
       <Row className="pf-row">
         <PortfolioSortBy />
-        <Col xs={24} sm={12} className="pf-link">
-          <Space size={"large"}>
-            <Typography.Text>
-              SEE FILMS
-              <RightOutlined />
-            </Typography.Text>
-            <Typography.Text>
-              SEE ALL STORIES
-              <RightOutlined />
-            </Typography.Text>
-          </Space>
-        </Col>
+        <BioPortfolioMore />
 
         {previousProjects.map((project, index) => (
           <Col
