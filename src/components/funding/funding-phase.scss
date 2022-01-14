@@ -1,4 +1,10 @@
 .funding-phase-container {
 	align-items: center;
-	margin: 1%;
+	margin: 2% 10%;
+	color:greenyellow;
+	.ant-steps-item-process { border-color: greenyellow; 
+		.ant-steps-item-icon {
+			color: greenyellow;
+		}
+	}
 }

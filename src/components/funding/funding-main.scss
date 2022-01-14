@@ -1,10 +1,19 @@
-.funding-main-container{s
-	.funding-main {
+.funding-main-container{
+	width: 100%;
+	.funding-main-upperhalf {
 		.ant-col {
       align-self: stretch;
     }
+		.project-image-description {
+			width: 100%;
+			.project-image-description-row {
+				.ant-col {
+					align-self: stretch;
+				}
+				.ant-row {
+					align-self: stretch;
+				}
+			}
+		}
 	}
-}
-.funding-main-lowerhalf{
-
 }

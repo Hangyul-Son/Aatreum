@@ -6,21 +6,21 @@ import { AlertOutlined } from "@ant-design/icons";
 
 function FundingNotice() {
   return (
-    <Row gutter={24} className="funding-notice-container">
-      <Col span={8}>
+    <Row className="funding-notice-container">
+      <Col span={8} className="notice-col">
         <Typography.Paragraph className="funding-notice-text">
           Instant NFT reward by Aatreum, a certificate that verifies your
           support
         </Typography.Paragraph>
       </Col>
-      <Col span={8}>
+      <Col span={8} className="notice-col">
         <Typography.Paragraph className="funding-notice-text">
           The project can have 3 or 5 different phases depending on its scale.
           Each phase of support provides you with a NFT that contains the
           progress of the project.
         </Typography.Paragraph>
       </Col>
-      <Col span={8}>
+      <Col span={8} className="notice-col">
         {/* <AlertOutlined className="/> */}
         <Typography.Paragraph className="funding-notice-text">
           You can buy or sell your previous NFTs to other users on our
