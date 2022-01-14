@@ -18,8 +18,8 @@ function BioShortIntro() {
         <Space direction="vertical" className="short-intro-paragraph-space">
           <Text strong>ABOUT GUNWOO BAEK</Text>
           <Text>
-            He is an awesome amateur photographer He is an awesome amateur
-            photographer He is an awesome amateur photographer
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
+            augue condimentum, porttitor ex ut.
           </Text>
         </Space>
       </Col>
