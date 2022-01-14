@@ -7,6 +7,7 @@ import FundingTitle from "./funding-title";
 import FundingDescription from "./funding-description";
 import FundingNotice from "./funding-notice";
 import FundingDescriptionSpecific from "./funding-description-specific";
+import FundingPhase from "./funding-phase";
 
 function FundingMain() {
   return (
@@ -22,6 +23,7 @@ function FundingMain() {
           <FundingDescription />
         </Col>
       </Row>
+      <FundingPhase />
       <FundingNotice />
       <Row className="funding-main-lowerhalf">
         <Col span={14}>
