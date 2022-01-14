@@ -5,6 +5,7 @@ import PortfolioCardMeta from "../bio/portfolio-card-meta";
 import { RootState } from "../../contexts/store";
 import "./funding-sidebio.scss";
 import { BugTwoTone } from "@ant-design/icons";
+import BioPortfolioCard from "../bio/bio-portfolio-card";
 
 function FundingSidebio() {
   const previousProjects = useSelector(
@@ -38,28 +39,7 @@ function FundingSidebio() {
       </Typography.Title>
       <Row className="sidebio-projects">
         {previousProjects.map((project, index) => (
-          <Col key={project.id} className="pf-col">
-            <Card
-              hoverable
-              cover={
-                <Image
-                  src={window.location.origin + project.imgSrc}
-                  style={{ height: "70%" }}
-                  preview={false}
-                />
-              }
-              style={{ height: "100%" }}
-            >
-              <PortfolioCardMeta
-                author={project.author}
-                type={project.category}
-                title={project.title}
-                date={project.date}
-              >
-                {project.description}
-              </PortfolioCardMeta>
-            </Card>
-          </Col>
+          <BioPortfolioCard project={project} />
         ))}
       </Row>
     </div>

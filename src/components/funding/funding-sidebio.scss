@@ -22,10 +22,16 @@
 		background-color: #fff;
 	}
 	.sidebio-projects {
-		.pf-col{
-			width: 100%;
-			border-radius: 20px;
-			padding-bottom: 20px;
+		.pf-card-col {
+			.ant-col-xl-12 {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+	
+			.ant-col-lg-12 {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
 		}
 	}
 }
