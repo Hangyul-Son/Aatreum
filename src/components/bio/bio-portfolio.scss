@@ -1,6 +1,6 @@
 .pf-container {
   position: relative;
-  background-color: #f0f2f5;
+  background-color: #edecec;
   padding-top: 5%;
   text-align: center;
 
@@ -12,21 +12,15 @@
     margin-bottom: 4%;
     font-size: 20px;
     font-family: sans-serif;
+    font-weight: 700;
     letter-spacing: 3px;
   }
 
   .pf-row {
-    margin: 3% 20% 0 20%;
-
-    .pf-link {
-      padding-right: 3%;
-      text-align: right;
-      font-family: sans-serif;
-      letter-spacing: 1px;
-    }
-
+    margin: 3% 15% 0 15%;
+    
     .pf-col {
-      margin-top: 4%;
+      margin-top: 3%;
       padding: 0% 3% 2% 3%;
     }
   }
