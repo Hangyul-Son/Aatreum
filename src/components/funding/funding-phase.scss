@@ -1,10 +1,27 @@
 .funding-phase-container {
-	align-items: center;
-	margin: 2% 10%;
-	color:greenyellow;
-	.ant-steps-item-process { border-color: greenyellow; 
-		.ant-steps-item-icon {
-			color: greenyellow;
-		}
-	}
+  align-items: center;
+  margin: 2% 10%;
+
+  .ant-steps-item-icon {
+    border-color: #1aa170;
+
+    svg {
+      fill: #1aa170;
+    }
+
+    .ant-progress-circle-path {
+      stroke: #1aa170;
+    }
+  }
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+  background: #1aa170;
+}
+
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title::after {
+  background-color: #1aa170;
 }
