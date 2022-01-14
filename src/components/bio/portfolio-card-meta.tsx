@@ -26,7 +26,6 @@ function PortfolioCardMeta({
         preview={false}
       />
       <PortfolioCardTypes author={author} type={type} />
-      <br />
       <div className="meta-title-container">
         <Typography.Title level={3} className="meta-title">
           {title}

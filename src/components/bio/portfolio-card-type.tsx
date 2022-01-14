@@ -1,18 +1,23 @@
 import React from "react";
 import { Divider, Typography } from "antd";
+import "./portfolio-card-type.scss";
 
 type Properties = {
   author: string;
   type: string;
 };
 
+const { Text } = Typography;
+
 function PortfolioCardTypes({ author, type }: Properties) {
   return (
-    <>
-      <Typography.Text type="secondary">{author}</Typography.Text>
+    <div className="pf-card-types">
+      <Text strong type="secondary">
+        {author}
+      </Text>
       <Divider type="vertical" />
-      <Typography.Text>{type}</Typography.Text>
-    </>
+      <Text strong>{type}</Text>
+    </div>
   );
 }
 
