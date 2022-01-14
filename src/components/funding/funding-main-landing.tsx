@@ -4,7 +4,6 @@ import "./funding-main-landing.scss";
 
 import FundingCover from "./funding-cover";
 import FundingDescription from "./funding-description";
-import FundingNotice from "./funding-notice";
 import FundingPhase from "./funding-phase";
 import FundingTitle from "./funding-title";
 
@@ -26,7 +25,6 @@ function FundingMainLanding() {
       </Row>
 
       <FundingPhase />
-      <FundingNotice />
     </div>
   );
 }

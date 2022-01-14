@@ -1,3 +1,40 @@
-.funding-main-landing {
-    padding: 0 8%;
+.funding-main-tabs {
+  display: inline;
+
+  .funding-main-specific-col {
+    position: static;
+
+    .ant-image {
+      position: static;
+    }
+  }
+
+  .ant-tabs-nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+    height: 64px;
+    border-top: 1px solid #dcdedd;
+    border-bottom: 1px solid #dcdedd;
+    z-index: 2;
+
+    .ant-tabs-nav-wrap {
+      padding-left: 5%;
+
+      .ant-tabs-tab-active > .ant-tabs-tab-btn {
+        color: #1aa170;
+      }
+
+      .ant-tabs-ink-bar {
+        background: #1aa170;
+      }
+
+      .ant-tabs-tab-btn:active,
+      .ant-tabs-tab-btn:focus,
+      .ant-tabs-tab-btn:hover {
+        color: #1aa170;
+      }
+    }
+  }
 }

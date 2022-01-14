@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Image, Row, Col, Card, Button, Typography } from "antd";
-import PortfolioCardMeta from "../bio/portfolio-card-meta";
-import { RootState } from "../../contexts/store";
+import { Image, Row, Button, Typography } from "antd";
 import "./funding-sidebio.scss";
-import { BugTwoTone } from "@ant-design/icons";
+
+import { RootState } from "../../contexts/store";
 import BioPortfolioCard from "../bio/bio-portfolio-card";
 
 function FundingSidebio() {
@@ -30,8 +29,10 @@ function FundingSidebio() {
             preview={false}
             className="sidebio-image"
           />
+          <Typography.Text className="sidebio-description-title">
+            ABOUT GUNWOO BAEK
+          </Typography.Text>
           <Typography.Text className="sidebio-description-text">
-            ABOUT GUNWOO BAEK <br />
             He is a photographer who is very devoted in mobile vehicles. An
             amazing synergy between his two interest have made him a great
             photographer, the only one in his field.

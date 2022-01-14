@@ -1,8 +1,6 @@
 import React from "react";
 import { Row, Col, Typography } from "antd";
-import "@ant-design/icons";
 import "./funding-notice.scss";
-import { AlertOutlined } from "@ant-design/icons";
 
 function FundingNotice() {
   return (

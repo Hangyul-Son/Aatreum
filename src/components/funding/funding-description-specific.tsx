@@ -1,10 +1,14 @@
 import React from "react";
-import { Typography, Image } from "antd";
+import { Typography, Image, Space } from "antd";
 import "./funding-description-specific.scss";
 
 function FundingDescriptionSpecific() {
   return (
-    <div className="funding-description-specific">
+    <Space
+      direction="vertical"
+      size={30}
+      className="funding-description-specific"
+    >
       <Typography.Title level={3} className="title">
         Details
       </Typography.Title>
@@ -107,7 +111,7 @@ function FundingDescriptionSpecific() {
         perfectly balanced and fun to drive in a wide variety of environments
         and uses? Well, it is.
       </Typography.Paragraph>
-    </div>
+    </Space>
   );
 }
 
