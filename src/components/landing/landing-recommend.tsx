@@ -3,7 +3,7 @@ import { Col, Divider, Image, Row, Typography } from "antd";
 import { useSelector } from "react-redux";
 import "./landing-recommend.scss";
 
-import { RootState } from "../contexts/store";
+import { RootState } from "../../contexts/store";
 
 function LandingRecommend() {
   const fundingProjects = useSelector(

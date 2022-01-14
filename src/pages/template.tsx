@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Layout } from "antd";
+import "../styles/template.scss";
 
 import TopNavigation from "../components/top-navigation";
 
@@ -13,7 +14,7 @@ const { Header, Content } = Layout;
 function Template({ pageName, children }: Properties) {
   return (
     <Layout className={pageName}>
-      <Header style={{ background: "#ffffff" }}>
+      <Header className="header">
         <TopNavigation />
       </Header>
       <Content>{children}</Content>
