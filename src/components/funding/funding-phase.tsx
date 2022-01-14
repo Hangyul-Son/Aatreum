@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Progress, Button, Steps } from "antd";
+import { Steps } from "antd";
 import "./funding-phase.scss";
 
 const { Step } = Steps;
@@ -12,12 +12,6 @@ function FundingPhase() {
         <Step title="Phase Two" />
         <Step title="Phase Three" />
       </Steps>
-      {/* <Progress
-        percent={10}
-        strokeWidth={50}
-        strokeColor={"#74B72E"}
-        className="progress"
-      /> */}
     </div>
   );
 }
