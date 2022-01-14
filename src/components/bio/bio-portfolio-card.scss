@@ -1,0 +1,21 @@
+.pf-card-col {
+  margin-top: 3%;
+  padding: 0% 3% 2% 3%;
+
+  .pf-card-mask {
+      background: rgba(255, 255, 255, 0.88);
+
+      .pf-card-mask-text {
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          color: #1AA170;
+      }
+
+      .pf-card-mask-arrow {
+          width: 50%;
+          margin-left: 50%;
+          transform: translateX(-50%);
+      }
+  }
+}

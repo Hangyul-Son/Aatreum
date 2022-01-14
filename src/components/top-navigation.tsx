@@ -10,7 +10,7 @@ function TopNavigation() {
   return (
     <div className="top-navigation">
       <Image
-        src="../../assets/images/aatreum-logo.png"
+        src="../assets/images/aatreum-logo.png"
         preview={false}
         alt="Aatrium"
         className="logo"

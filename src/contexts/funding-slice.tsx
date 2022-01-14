@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import data from "../data/funding-projects.json";
 import data2 from "../data/bgw-portfolio.json";
 
-type Funding = {
+export type Funding = {
   id: number;
   title: string;
   count: number;
@@ -10,7 +10,7 @@ type Funding = {
   imageSrc: string;
 };
 
-type Project = {
+export type Project = {
   id: number;
   author: string;
   category: string;
@@ -20,12 +20,12 @@ type Project = {
   imgSrc: string;
 };
 
-type SlideState = {
+type SliceState = {
   fundingProjects: Array<Funding>;
   previousProjects: Array<Project>;
 };
 
-const initialState: SlideState = {
+const initialState: SliceState = {
   fundingProjects: [...data],
   previousProjects: [...data2],
 };

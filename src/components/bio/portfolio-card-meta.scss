@@ -5,35 +5,40 @@
   .ant-image {
     position: absolute;
     top: 0px;
-    width: 100px;
-    max-width: 100px;
-    right: 0;
-    height: 500px;
+    right: -4%;
+
+    .pf-card-minted {
+      width: 150px;
+      margin-top: -15%;
+      margin-left: 20%;
+    }
+
+    .pf-card-progress {
+      width: 100px;
+    }
   }
 
   .meta-title-container {
     display: inline-block;
-    border-bottom: 3px solid rgb(0, 0, 0, 0.5);
+    border-bottom: 2px solid #9dd9c5;
     border-width: 100%;
     margin-bottom: 1%;
 
     .meta-title {
       margin: 15% 0 0 0;
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      font-weight: 300;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 500;
     }
   }
 
   .meta-children {
     font-size: 14px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    // letter-spacing: 0.5px;
   }
 
   .meta-date {
     padding-top: 3%;
     text-align: right;
-    font-family: 'Times New Roman';
+    font-family: "Times New Roman";
     font-weight: 600;
   }
 }

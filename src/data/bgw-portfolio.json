@@ -5,7 +5,7 @@
     "category": "PHOTOGRAPHY",
     "title": "McLaren",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat enim ut tellus consectetur, in.",
-    "date": "Thu Jan 14 2021",
+    "date": ".12.30.19.",
     "imgSrc": "\\assets\\images\\car1.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "category": "PHOTOGRAPHY",
     "title": "BMW SUVs",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat enim ut tellus consectetur, in.",
-    "date": "Fri May 14 2021",
+    "date": ".11.11.19.",
     "imgSrc": "\\assets\\images\\car2.jpg"
   },
   {
@@ -23,7 +23,7 @@
     "category": "PHOTOGRAPHY",
     "title": "BMW in Wild",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat enim ut tellus consectetur, in.",
-    "date": "Mon Nov 1 2021",
+    "date": ".10.30.19.",
     "imgSrc": "\\assets\\images\\car3.jpg"
   },
   {
@@ -32,7 +32,7 @@
     "category": "PHOTOGRAPHY",
     "title": "Classic Tesla",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat enim ut tellus consectetur, in.",
-    "date": "Fri Jan 14 2022",
+    "date": ".10.21.19.",
     "imgSrc": "\\assets\\images\\car4.jpg"
   }
 ]
