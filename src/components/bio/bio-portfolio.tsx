@@ -1,12 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Col, Row, Image, Card, Typography } from "antd";
+import { Row, Image, Typography } from "antd";
 import "./bio-portfolio.scss";
 
 import { RootState } from "../../contexts/store";
-import PortfolioCardMeta from "./portfolio-card-meta";
 import PortfolioSortBy from "./portfolio-sort-by";
 import BioPortfolioMore from "./bio-portfolio-more";
+import BioPortfolioCard from "./bio-portfolio-card";
 
 function BioPortfolio() {
   const previousProjects = useSelector(
@@ -27,37 +27,8 @@ function BioPortfolio() {
         <PortfolioSortBy />
         <BioPortfolioMore />
 
-        {previousProjects.map((project, index) => (
-          <Col
-            xs={24}
-            sm={24}
-            md={24}
-            lg={12}
-            xl={12}
-            key={project.id}
-            className="pf-col"
-          >
-            <Card
-              hoverable
-              cover={
-                <Image
-                  src={window.location.origin + project.imgSrc}
-                  style={{ height: "70%" }}
-                  preview={false}
-                />
-              }
-              style={{ height: "100%" }}
-            >
-              <PortfolioCardMeta
-                author={project.author}
-                type={project.category}
-                title={project.title}
-                date={project.date}
-              >
-                {project.description}
-              </PortfolioCardMeta>
-            </Card>
-          </Col>
+        {previousProjects.map((project) => (
+          <BioPortfolioCard project={project} />
         ))}
       </Row>
     </div>
